@@ -1,3 +1,3 @@
 export const Main = () => {
-  return <main className="flex-1 w-full bg-amber-50"></main>;
+  return <main className="flex-1 bg-red-500 w-3/4"></main>;
 };

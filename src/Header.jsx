@@ -1,14 +1,13 @@
 import { Agregar_btn } from "./botones/Agregar_btn";
 import { Editar_jsx } from "./botones/Editar_btn";
 import { Eliminar_btn } from "./botones/Eliminar_btn";
-export const Header = () => {
+
+export const Header = ({ onEliminarClick }) => {
   return (
-    <div>
-      <header className="bg-amber-600 flex justify-between p-2 rounded-2xl">
-        <Agregar_btn />
-        <Editar_jsx />
-        <Eliminar_btn />
-      </header>
-    </div>
+    <header className="bg-amber-600 flex justify-between p-1.5 rounded-2xl w-full">
+      <Agregar_btn></Agregar_btn>
+      <Editar_jsx></Editar_jsx>
+      <Eliminar_btn onClick={onEliminarClick} />
+    </header>
   );
 };
