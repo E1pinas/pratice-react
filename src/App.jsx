@@ -36,6 +36,9 @@ export const ListaAmigos = () => {
   const [nuevoAmigo, setNuevoAmigo] = useState("");
 
   return (
+    
+
+
     <div>
       <h2>Ingresa un nuevo amigo</h2>
       <input
